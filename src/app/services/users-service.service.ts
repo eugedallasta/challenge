@@ -38,4 +38,7 @@ export class UsersServiceService {
   getUsers() {
     return this.usersArray;
   }
+  addUser(user: User) {
+    this.usersArray.push(user);
+  }
 }
