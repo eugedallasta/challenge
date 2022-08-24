@@ -1,51 +1,60 @@
-<div class="card">
-  <div class="card-header">Crear un nuevo usuario</div>
-  <div class="card-body">
-    <h5 class="card-title">Completar el siguiente formulario</h5>
-    <form>
-      <!-- Input Nombre -->
-      <div class="mb-3">
-        <label for="name" class="form-label">Nombre</label>
-        <input
-          type="text"
-          class="form-control"
-          id="name"
-          placeholder="Escribe tu nombre aquí"
-        />
-      </div>
-      <!-- Input Edad -->
-      <div class="mb-3">
-        <label for="age" class="form-label">Edad</label>
-        <input
-          type="number"
-          class="form-control"
-          id="age"
-          placeholder="Escribe tu edad aquí"
-        />
-      </div>
-      <!-- Input Carrera -->
-      <div class="mb-3">
-        <label for="carreer" class="form-label">Carrera</label>
-        <input
-          type="text"
-          class="form-control"
-          id="carreer"
-          placeholder="Escribe tu carrera aquí (ej: Ingeniería en Sistemas)"
-        />
-      </div>
-      <!-- Input Hobbie -->
-      <div class="mb-3">
-        <label for="hobbie" class="form-label">Hobbie</label>
-        <input
-          type="text"
-          class="form-control"
-          id="hobbie"
-          placeholder="Escribe tu hobbie aquí (ej: Salir a correr)"
-        />
-      </div>
-    </form>
-    <button [routerLink]="'/lista'" class="btn btn-primary">
-      Ver lista de usuarios
+<div class="container mt-5">
+  <div class="card shadow-lg w-50 mx-auto">
+    <div class="card-header">Crear un nuevo usuario</div>
+    <div class="card-body">
+      <h5 class="card-title">Completar el siguiente formulario</h5>
+      <form>
+        <!-- Input Nombre -->
+        <div class="mb-3">
+          <label for="name" class="form-label">Nombre</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Escribe tu nombre aquí"
+          />
+        </div>
+        <!-- Input Edad -->
+        <div class="mb-3">
+          <label for="age" class="form-label">Edad</label>
+          <input
+            type="number"
+            class="form-control"
+            id="age"
+            placeholder="Escribe tu edad aquí"
+          />
+        </div>
+        <!-- Input Carrera -->
+        <div class="mb-3">
+          <label for="carreer" class="form-label">Carrera</label>
+          <input
+            type="text"
+            class="form-control"
+            id="carreer"
+            placeholder="Escribe tu carrera aquí (ej: Ingeniería en Sistemas)"
+          />
+        </div>
+        <!-- Input Hobbie -->
+        <div class="mb-3">
+          <label for="hobbie" class="form-label">Hobbie</label>
+          <input
+            type="text"
+            class="form-control"
+            id="hobbie"
+            placeholder="Escribe tu hobbie aquí (ej: Salir a correr)"
+          />
+        </div>
+        <!-- Botón Submit -->
+        <button class="btn btn-primary" type="submit">Enviar formulario</button>
+      </form>
+    </div>
+  </div>
+  <div class="d-grid gap-2 d-md-block col-6 mx-auto mt-3">
+    <button [routerLink]="''" class="btn btn-info me-2" type="button">
+      Volver al Home
+    </button>
+    <button [routerLink]="'/lista'" class="btn btn-success" type="button">
+      Ver Lista de usuarios
     </button>
   </div>
 </div>
